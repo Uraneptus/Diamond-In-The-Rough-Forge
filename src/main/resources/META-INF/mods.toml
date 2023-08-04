@@ -1,0 +1,27 @@
+modLoader="javafml" #mandatory
+loaderVersion="[47,)" #mandatory
+license="Apache-2.0"
+
+[[mods]] #mandatory
+modId = "ditr" #mandatory
+version = "${file.jarVersion}" #mandatory
+authors = "Uraneptus [Forge Port], DigitalPear [Original]" #optional
+credits = "AvocadoSpud [Block Texture], KingRolly [Mod Name]" #optional
+displayName = "Diamond In The Rough" #mandatory
+description = '''
+A renewable way of obtaining diamonds.'''
+displayTest = "MATCH_VERSION"
+
+[[dependencies.ditr]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[47,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ditr]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
