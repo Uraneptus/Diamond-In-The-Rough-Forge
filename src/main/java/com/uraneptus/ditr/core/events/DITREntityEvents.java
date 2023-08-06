@@ -2,7 +2,6 @@ package com.uraneptus.ditr.core.events;
 
 import com.uraneptus.ditr.DiamondInTheRough;
 import com.uraneptus.ditr.core.other.DITRBlockTags;
-import com.uraneptus.ditr.core.registry.DITRBlocksItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
@@ -38,7 +37,7 @@ public class DITREntityEvents {
             Objects.requireNonNull(ForgeRegistries.BLOCKS.tags()).getTag(DITRBlockTags.DRAGON_MADE_ORES).forEach(ores::add);
 
             for (BlockPos pos : BlockPos.betweenClosed(blockPos.offset(-width, -width, -width), blockPos.offset(width, width, width))) {
-                if (level.getBlockState(pos).is(DITRBlockTags.OBSIDIAN_DIAMOND_ORE_REPLACEABLES) && (pos.distSqr(blockPos) <= (double)(radius * radius)) && yesDiamond(level)) {
+                if (level.getBlockState(pos).is(DITRBlockTags.OBSIDIAN_ORE_REPLACEABLES) && (pos.distSqr(blockPos) <= (double)(radius * radius)) && yesDiamond(level)) {
                     level.setBlock(pos, ores.get(random.nextInt(ores.size())).defaultBlockState(), 3);
                 }
             }
