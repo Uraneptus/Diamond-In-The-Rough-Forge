@@ -22,7 +22,7 @@ public class DITRClientEvents {
     public static void buildTabContents(BuildCreativeModeTabContentsEvent event) {
         ResourceKey<CreativeModeTab> tabKey = event.getTabKey();
         if (tabKey == CreativeModeTabs.NATURAL_BLOCKS) {
-            addAfter(Items.NETHER_GOLD_ORE, DITRBlocksItems.OBSIDIAN_DIAMOND_ORE_ITEM, event);
+            addAfter(Items.DEEPSLATE_DIAMOND_ORE, DITRBlocksItems.OBSIDIAN_DIAMOND_ORE_ITEM, event);
         }
     }
 

@@ -26,5 +26,6 @@ public class DITRBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL).add(DITRBlocksItems.OBSIDIAN_DIAMOND_ORE.get());
         tag(BlockTags.DRAGON_IMMUNE).add(DITRBlocksItems.OBSIDIAN_DIAMOND_ORE.get());
         tag(DITRBlockTags.OBSIDIAN_DIAMOND_ORE_REPLACEABLES).add(Blocks.OBSIDIAN);
+        tag(DITRBlockTags.DRAGON_MADE_ORES).add(DITRBlocksItems.OBSIDIAN_DIAMOND_ORE.get());
     }
 }
