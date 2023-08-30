@@ -29,6 +29,7 @@ import java.util.concurrent.CompletableFuture;
 @Mod.EventBusSubscriber(modid = DiamondInTheRough.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DiamondInTheRough {
     public static final String MOD_ID = "ditr";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final GameRules.Key<GameRules.IntegerValue> DIAMOND_CONVERSION_PERCENTAGE = GameRules.register("diamondConversionPercentage", GameRules.Category.MOBS, GameRules.IntegerValue.create(40));
 

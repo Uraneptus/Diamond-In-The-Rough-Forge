@@ -36,11 +36,16 @@ public class DITREntityEvents {
             List<Block> ores = new ArrayList<>();
             Objects.requireNonNull(ForgeRegistries.BLOCKS.tags()).getTag(DITRBlockTags.DRAGON_MADE_ORES).forEach(ores::add);
 
-            for (BlockPos pos : BlockPos.betweenClosed(blockPos.offset(-width, -width, -width), blockPos.offset(width, width, width))) {
-                if (level.getBlockState(pos).is(DITRBlockTags.OBSIDIAN_ORE_REPLACEABLES) && (pos.distSqr(blockPos) <= (double)(radius * radius)) && yesDiamond(level)) {
-                    level.setBlock(pos, ores.get(random.nextInt(ores.size())).defaultBlockState(), 3);
+            if (!ores.isEmpty()) {
+                for (BlockPos pos : BlockPos.betweenClosed(blockPos.offset(-width, -width, -width), blockPos.offset(width, width, width))) {
+                    if (level.getBlockState(pos).is(DITRBlockTags.OBSIDIAN_ORE_REPLACEABLES) && (pos.distSqr(blockPos) <= (double)(radius * radius)) && yesDiamond(level)) {
+                        level.setBlock(pos, ores.get(random.nextInt(ores.size())).defaultBlockState(), Block.UPDATE_ALL);
+                    }
                 }
+            } else {
+                DiamondInTheRough.LOGGER.info("[" + DiamondInTheRough.MOD_ID + "]: List of obsidian ores is empty!");
             }
+
         }
     }
 
@@ -49,6 +54,6 @@ public class DITREntityEvents {
     }
 
     public static boolean yesDiamond(Level level) {
-        return (level.random.nextIntBetweenInclusive(1, 100) <= level.getGameRules().getInt(DiamondInTheRough.DIAMOND_CONVERSION_PERCENTAGE));
+        return level.getGameRules().getInt(DiamondInTheRough.DIAMOND_CONVERSION_PERCENTAGE) >= level.random.nextIntBetweenInclusive(1, 100);
     }
 }
