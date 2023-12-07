@@ -6,9 +6,10 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class DITRBlockLoot extends BlockLootSubProvider {
     private static final Set<Item> EXPLOSION_RESISTANT = Set.of();
@@ -19,7 +20,7 @@ public class DITRBlockLoot extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return DITRBlocksItems.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return DITRBlocksItems.BLOCKS.getEntries().stream().map(DeferredHolder::get).collect(Collectors.toList());
     }
 
     @Override

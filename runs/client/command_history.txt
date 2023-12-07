@@ -1,0 +1,4 @@
+/setblock -213 69 317 minecraft:end_portal
+/summon minecraft:fireball ~ ~ ~
+/summon minecraft:dragon_fireball ~ ~ ~
+/summon minecraft:fireball ~ ~ ~

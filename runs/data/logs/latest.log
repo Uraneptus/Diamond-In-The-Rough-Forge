@@ -1,0 +1,41 @@
+[08Dec2023 00:29:42.588] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, ditr, --all, --output, A:\Programming\Modding\Mods\DP's mods\Diamond-In-The-Rough-Forge\src\generated\resources, --existing, A:\Programming\Modding\Mods\DP's mods\Diamond-In-The-Rough-Forge\src\main\resources, --launchTarget, forgedatauserdev, --assetIndex, asset-index, --assetsDir, C:\Users\URANEPTUS\.gradle\caches\minecraft\assets\1.20.2, --gameDir, ., --fml.neoForgeVersion, 20.2.86, --fml.fmlVersion, 1.0.16, --fml.mcVersion, 1.20.2, --fml.neoFormVersion, 20231019.002635]
+[08Dec2023 00:29:42.592] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.1 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[08Dec2023 00:29:42.704] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[08Dec2023 00:29:42.747] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/URANEPTUS/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23167!/ Service=ModLauncher Env=CLIENT
+[08Dec2023 00:29:42.989] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\URANEPTUS\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\core\1.0.16\6bab0913ca1635a8e272ef89c17befb52115a3c2\core-1.0.16.jar is missing mods.toml file
+[08Dec2023 00:29:42.994] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\URANEPTUS\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-java\1.0.16\2ddedcd8a488fd73e3e92a59949845e9c3a7d9f2\language-java-1.0.16.jar is missing mods.toml file
+[08Dec2023 00:29:42.998] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\URANEPTUS\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-lowcode\1.0.16\e627c78870d4286826c4b14c0137319ff03b4e0\language-lowcode-1.0.16.jar is missing mods.toml file
+[08Dec2023 00:29:43.003] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\URANEPTUS\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-minecraft\1.0.16\c1f7785ff7fc0b18aa6d2d4056dcff4fee1b32be\language-minecraft-1.0.16.jar is missing mods.toml file
+[08Dec2023 00:29:43.015] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "core-1.0.16.jar" of type LIBRARY with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.015] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-java-1.0.16.jar" of type LANGPROVIDER with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.015] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-lowcode-1.0.16.jar" of type LANGPROVIDER with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.015] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-minecraft-1.0.16.jar" of type LANGPROVIDER with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.015] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-20.2.86.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.015] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.016] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@2a2bb0eb
+[08Dec2023 00:29:43.043] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "events-1.0.16.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.BuiltinGameLibraryLocator@9fecdf1
+[08Dec2023 00:29:43.144] [main/INFO] [net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[08Dec2023 00:29:43.145] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinextras-neoforge-0.3.1.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@5c09d180
+[08Dec2023 00:29:44.001] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[08Dec2023 00:29:44.005] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\URANEPTUS\.gradle\caches\minecraft\assets\1.20.2, --mod, ditr, --all, --output, A:\Programming\Modding\Mods\DP's mods\Diamond-In-The-Rough-Forge\src\generated\resources, --existing, A:\Programming\Modding\Mods\DP's mods\Diamond-In-The-Rough-Forge\src\main\resources, --assetIndex, asset-index]
+[08Dec2023 00:29:44.085] [main/WARN] [mixin/]: Reference map 'ditr.refmap.json' for ditr.mixins.json could not be read. If this is a development environment you can ignore this message
+[08Dec2023 00:29:44.423] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ditr]
+[08Dec2023 00:29:49.302] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 20.2.86, for MC 1.20.2 with MCP 20231019.002635
+[08Dec2023 00:29:49.992] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/A:/Programming/Modding/Mods/DP's%20mods/Diamond-In-The-Rough-Forge/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.2.86/neoforge-20.2.86.jar%23192!/assets/.mcassetsroot' uses unexpected schema
+[08Dec2023 00:29:49.992] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/A:/Programming/Modding/Mods/DP's%20mods/Diamond-In-The-Rough-Forge/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.2.86/neoforge-20.2.86.jar%23192!/data/.mcassetsroot' uses unexpected schema
+[08Dec2023 00:29:50.175] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: ditr
+[08Dec2023 00:29:50.191] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: ditr finished after 15 ms
+[08Dec2023 00:29:50.192] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: ditr
+[08Dec2023 00:29:50.193] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: ditr finished after 1 ms
+[08Dec2023 00:29:50.193] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Languages: en_us
+[08Dec2023 00:29:50.194] [main/INFO] [net.minecraft.data.DataGenerator/]: Languages: en_us finished after 0 ms
+[08Dec2023 00:29:50.194] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id ditr
+[08Dec2023 00:29:50.298] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id ditr finished after 103 ms
+[08Dec2023 00:29:50.298] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id ditr
+[08Dec2023 00:29:50.299] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id ditr finished after 0 ms
+[08Dec2023 00:29:50.299] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[08Dec2023 00:29:50.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 24 ms
+[08Dec2023 00:29:50.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[08Dec2023 00:29:50.353] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 28 ms
+[08Dec2023 00:29:50.353] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 178 ms
+[08Dec2023 00:29:50.363] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 16, old count: 16, new count: 17, removed stale: 0, written: 2

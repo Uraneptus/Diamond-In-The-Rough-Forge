@@ -3,8 +3,8 @@ package com.uraneptus.ditr.core.data.client;
 import com.uraneptus.ditr.DiamondInTheRough;
 import com.uraneptus.ditr.core.registry.DITRBlocksItems;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 @SuppressWarnings("SameParameterValue")
 public class DITRBlockStateProvider extends BlockStateProvider {

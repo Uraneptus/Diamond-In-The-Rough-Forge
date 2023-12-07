@@ -3,7 +3,7 @@ package com.uraneptus.ditr.core.data.client;
 import com.uraneptus.ditr.DiamondInTheRough;
 import com.uraneptus.ditr.core.registry.DITRBlocksItems;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.common.data.LanguageProvider;
 
 public class DITRLangProvider extends LanguageProvider {
 
