@@ -15,6 +15,7 @@ public class DITRLangProvider extends LanguageProvider {
     protected void addTranslations() {
         addBlock(DITRBlocksItems.OBSIDIAN_DIAMOND_ORE, "Obsidian Diamond Ore");
         add("gamerule.diamondConversionPercentage", "Obsidian to diamond conversion chance");
+        add("gamerule.handDiamondConversion", "Obsidian can be turned to diamond ore by hand");
     }
 
 }

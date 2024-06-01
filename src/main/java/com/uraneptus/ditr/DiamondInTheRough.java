@@ -30,6 +30,7 @@ public class DiamondInTheRough {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final GameRules.Key<GameRules.IntegerValue> DIAMOND_CONVERSION_PERCENTAGE = GameRules.register("diamondConversionPercentage", GameRules.Category.MOBS, GameRules.IntegerValue.create(40));
+    public static final GameRules.Key<GameRules.BooleanValue> HAND_CONVERSION = GameRules.register("handDiamondConversion", GameRules.Category.MISC, GameRules.BooleanValue.create(false));
 
     public static ResourceLocation modPrefix(String path) {
         return new ResourceLocation(DiamondInTheRough.MOD_ID, path);
@@ -59,7 +60,7 @@ public class DiamondInTheRough {
         DITRBlockTagsProvider blockTagProvider = new DITRBlockTagsProvider(packOutput, lookupProvider, fileHelper);
         generator.addProvider(includeServer, blockTagProvider);
         generator.addProvider(includeServer, new DITRItemTagsProvider(packOutput, lookupProvider, blockTagProvider.contentsGetter(), fileHelper));
-        generator.addProvider(includeServer, new DITRLootTablesProvider(packOutput));
+        generator.addProvider(includeServer, new DITRLootTablesProvider(packOutput, lookupProvider));
         generator.addProvider(includeServer, new DITRRecipeProvider(packOutput, lookupProvider));
     }
 }

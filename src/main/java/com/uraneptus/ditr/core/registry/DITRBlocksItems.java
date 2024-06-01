@@ -20,7 +20,7 @@ public class DITRBlocksItems {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(DiamondInTheRough.MOD_ID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(DiamondInTheRough.MOD_ID);
 
-    public static final DeferredBlock<Block> OBSIDIAN_DIAMOND_ORE = BLOCKS.register("obsidian_diamond_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).strength(52.0F, 1200.0F).pushReaction(PushReaction.NORMAL), UniformInt.of(3, 7)));
+    public static final DeferredBlock<Block> OBSIDIAN_DIAMOND_ORE = BLOCKS.register("obsidian_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).strength(52.0F, 1200.0F).pushReaction(PushReaction.NORMAL)));
     public static final DeferredItem<BlockItem> OBSIDIAN_DIAMOND_ORE_ITEM = ITEMS.registerSimpleBlockItem(OBSIDIAN_DIAMOND_ORE);
 
 }
