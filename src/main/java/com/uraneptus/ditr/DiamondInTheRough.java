@@ -33,7 +33,7 @@ public class DiamondInTheRough {
     public static final GameRules.Key<GameRules.BooleanValue> HAND_CONVERSION = GameRules.register("handDiamondConversion", GameRules.Category.MISC, GameRules.BooleanValue.create(false));
 
     public static ResourceLocation modPrefix(String path) {
-        return new ResourceLocation(DiamondInTheRough.MOD_ID, path);
+        return ResourceLocation.fromNamespaceAndPath(DiamondInTheRough.MOD_ID, path);
     }
 
     public DiamondInTheRough(IEventBus bus) {

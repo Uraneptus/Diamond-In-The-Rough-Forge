@@ -86,6 +86,7 @@ public class DITREntityEvents {
                     player.addItem(Items.GLASS_BOTTLE.getDefaultInstance());
                 }
                 level.playSound(null, pos.getX() + 0.5f, pos.getY() + 0.5f, pos.getZ() + 0.5f, SoundEvents.BOTTLE_FILL_DRAGONBREATH, SoundSource.PLAYERS, 1.0F, 1.0F);
+                player.swing(hand);
             }
             else{
                 DiamondInTheRough.LOGGER.info("List of obsidian ores is empty!");
