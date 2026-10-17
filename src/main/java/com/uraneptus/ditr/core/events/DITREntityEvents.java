@@ -2,6 +2,7 @@ package com.uraneptus.ditr.core.events;
 
 import com.uraneptus.ditr.DiamondInTheRough;
 import com.uraneptus.ditr.core.other.DITRBlockTags;
+import com.uraneptus.ditr.core.other.DITREntityTypeTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -60,7 +61,8 @@ public class DITREntityEvents {
     }
 
     private static boolean isCorrectEntity(Entity entity) {
-        return !FMLEnvironment.production ? entity instanceof Fireball : entity instanceof DragonFireball;
+        if (!FMLEnvironment.production ? entity instanceof Fireball : entity instanceof DragonFireball) return true;
+        return entity.getType().getTags().anyMatch(t -> t.equals(DITREntityTypeTags.DRAGON_FIREBALLS));
     }
 
     public static boolean yesDiamond(Level level) {

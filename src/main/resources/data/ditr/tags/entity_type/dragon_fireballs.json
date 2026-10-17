@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:dragon_fireball",
+    {
+      "id": "amendments:medium_dragon_fireball",
+      "required": false
+    }
+  ]
+}
